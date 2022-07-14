@@ -75,3 +75,49 @@ Lo ideal en la cohesión es tener bajo acoplamiento y buena cohesión, lo cual s
 - La alta cohesión significa que la clase se enfoca en lo que debería estar haciendo, es decir, solo métodos relacionado con la intención de la clase. 
 
 __Un buen diseño de software tiene alta cohesión y bajo acoplamiento.__
+
+
+#### Código No Probable 
+
+Es código difícilmente testeable, esto es debido a:
+
+- Código con alto acoplamiento. 
+- Código con muchas dependiencias no inyectadas. 
+- Dependencias en el contexto global (Tipo Singleton).
+
+
+__Debemos tener en mente las pruebas desde la creación del código.__
+
+#### Optimizaciones Prematuras
+
+Mantener abiertas las opciones retrasando la toma de decisiones, nos permite darle mayor relevancia a lo que es más importante en una aplicación, se enfoca a las reglas de negocio.
+
+No debemos anticiparnos a los requisitos y desarrollar abstracciones innecesarias que puedan añadir complejidad accidental, el cual implementa una solución compleja a la mínima indispensable. 
+
+La complejidad esencial es inherente al problema. En ambas complejidades debe haber un balance. 
+
+#### Nombres Pocos Descriptivos
+
+Se refiere a:
+
+- Nombres de variables mal nombradas. 
+- Nombres de clases genéricas. 
+- Nombres de funciones mal nombradas. 
+- Ser muy específico o demasiado genérico. 
+
+#### Duplicidad de Código
+
+Se refiere al principio DRY, el cual tenemos dos tipos de principios. 
+
+`Real`
+
+- Código es idéntico y cumple la misma función. 
+- Un cambio implicaría actualizar todo el código identico en varios lugares. 
+- Incrementa posibilidades de error humano al olvidar una parte para actualizar. 
+- Mayor cantidad de pruebas innecesarias. 
+
+`Accidental`
+
+- Código luce similar pero cumple funciones distintas. 
+- Cuando hay un cambio, sólo hay que modificar un solo lugar. 
+- Este tipo de duplicidad se puede trabajaar con parámetros u optimizaciones. 
